@@ -5,5 +5,6 @@ mongoose.connect("mongodb://localhost/noderest", {
   useUnifiedTopology: true,
   useCreateIndex: true
 });
+mongoose.set('useFindAndModify', false);
 
 module.exports = mongoose;
